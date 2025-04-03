@@ -10,7 +10,7 @@ const UserChallenge = () => {
       alert('please enter value')
       return
     }
-    const newItem = { id: new Date().getTime().toString(), name }
+    const newItem = { id: new Date().toString(), name }
     // const updatedUsers = [...item, newItem]
     // setItem(updatedUsers)
     setItem((oldItems) => {
