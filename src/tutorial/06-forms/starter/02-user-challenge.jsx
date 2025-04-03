@@ -11,11 +11,11 @@ const UserChallenge = () => {
       return
     }
     const newItem = { id: new Date().getTime().toString(), name }
-    // const updatedUsers = [...item, newItem]
-    // setItem(updatedUsers)
-    setItem((oldItems) => {
-      return [...oldItems, newItem]
-    })
+    const updatedUsers = [...item, newItem]
+    setItem(updatedUsers)
+    // setItem((oldItems) => {
+    //   return [...oldItems, newItem]
+    // })
 
     setName('')
   }
